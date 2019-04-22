@@ -11,15 +11,15 @@
 #include "EngineUtils.h"
 
 
-AAfdController::AAfdController()
-	: _listener(this),
-	AddressFilter(TEXT("/afd/*"))
+AAfdController::AAfdController() :
+	AddressFilter(TEXT("/afd/*")),
+	_listener(this)
 {
 }
 
 AAfdController::AAfdController(FVTableHelper & helper) :
-	_listener(this),
-	AddressFilter(TEXT("/afd/*"))
+	AddressFilter(TEXT("/afd/*")),
+	_listener(this)
 {
 	// Does not need to be a valid object.	
 }
